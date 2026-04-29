@@ -1,0 +1,8 @@
+budget = float(input("Budget in dollars: "))
+trip_type = input("Type of trip(local/international): ")
+
+if trip_type == "local" and budget >= 650:
+    print("You can take a road trip!")
+elif trip_type == "international" and budget >= 5000:
+    print("You can travel abroad!")
+else: print("Save a bit more first.")

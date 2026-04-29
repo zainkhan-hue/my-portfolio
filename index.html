@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zain Khan | Athlete · Gamer · Tech</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Make the whole card look clickable */
+    .project-card { cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project-card:hover { transform: translateY(-10px); box-shadow: 0 0 20px var(--neon-blue); }
+    .project-card a { text-decoration: none; color: inherit; display: block; }
+  </style>
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">ZAIN<span class="neon-blue">_KHAN</span></span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#game" class="nav-link neon-orange-text">🏀 Game</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="floating-balls">
+      <div class="bball bball-1">🏀</div>
+      <div class="bball bball-2">🏀</div>
+      <div class="bball bball-3">🏀</div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-pre-title"><span class="terminal-cursor">▶</span> INITIALIZING PROFILE...</p>
+      <h1 class="hero-name">ZAIN <span class="neon-blue">KHAN</span></h1>
+      <div class="hero-roles">
+        <span class="role-tag">🏀 Athlete</span>
+        <span class="role-tag">💻 Tech Enthusiast</span>
+        <span class="role-tag">🎮 Gamer</span>
+        <span class="role-tag">📚 Student</span>
+      </div>
+      <p class="hero-tagline">Playing the game on the court <span class="neon-orange-text">&amp;</span> in the code.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#game" class="btn btn-secondary">Play Game 🏀</a>
+      </div>
+    </div>
+    <div class="hero-ball-graphic">
+      <div class="big-ball">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="95" fill="#ff6b00" stroke="#ff8c00" stroke-width="2"/>
+          <path d="M100 5 Q130 50 130 100 Q130 150 100 195" fill="none" stroke="#1a0800" stroke-width="4"/>
+          <path d="M100 5 Q70 50 70 100 Q70 150 100 195" fill="none" stroke="#1a0800" stroke-width="4"/>
+          <path d="M5 100 Q50 70 100 70 Q150 70 195 100" fill="none" stroke="#1a0800" stroke-width="4"/>
+          <path d="M5 100 Q50 130 100 130 Q150 130 195 100" fill="none" stroke="#1a0800" stroke-width="4"/>
+          <circle cx="100" cy="100" r="95" fill="none" stroke="#ff4500" stroke-width="3" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="ball-glow"></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-arrow">▼</div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="neon-blue">01.</span> About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">Hey, I'm <span class="neon-orange-text">Zain Khan</span> — a 7th-grade student-athlete and emerging developer at The Village School.</p>
+          <p>I've always been driven by two worlds: the high-speed action of **basketball** and the limitless potential of **technology**. Whether I'm practicing my jumper or writing my first lines of code, I'm always looking for the next level.</p>
+          <p>This is my first year in the world of programming, and I'm already hooked on the logic and creativity of building things from scratch. I believe that the focus I use on the court is the same focus that will help me master the world of tech.</p>
+          <div class="about-stats">
+            <div class="stat-box">
+              <span class="stat-number neon-blue">∞</span>
+              <span class="stat-label">Drive</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number neon-orange-text">100%</span>
+              <span class="stat-label">Effort</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number neon-green-text">24/7</span>
+              <span class="stat-label">Grind</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="profile-frame">
+            <img src="assets/profile.png" alt="Zain Khan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px; border: 2px solid var(--neon-blue); box-shadow: 0 0 15px var(--neon-blue);">
+            <div class="profile-corner tl"></div>
+            <div class="profile-corner tr"></div>
+            <div class="profile-corner bl"></div>
+            <div class="profile-corner br"></div>
+          </div>
+          <div class="about-tags">
+            <span class="tag">#Basketball</span>
+            <span class="tag">#Gaming</span>
+            <span class="tag">#Coding</span>
+            <span class="tag">#Student</span>
+            <span class="tag">#Athlete</span>
+            <span class="tag">#Builder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="neon-orange-text">02.</span> Skills</h2>
+        <div class="section-line orange"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-code"></i> Tech Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>Python Coding</span><span class="neon-blue">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill blue" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Logic & Algorithms</span><span class="neon-blue">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill blue" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-basketball-ball"></i> Athletic Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>Shooting</span><span class="neon-orange-text">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill orange" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Dribbling</span><span class="neon-orange-text">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill orange" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-gamepad"></i> Gaming Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>Strategy</span><span class="neon-green-text">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill green" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Reaction Time</span><span class="neon-green-text">93%</span></div>
+              <div class="skill-bar"><div class="skill-fill green" data-width="93"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="neon-green-text">03.</span> Experience</h2>
+        <div class="section-line green"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2024 – Present</div>
+            <h3 class="timeline-title">Student Athlete</h3>
+            <p class="timeline-org neon-orange-text">The Village School</p>
+            <p class="timeline-desc">Currently in 7th grade, balancing academic excellence with competitive basketball. Developing leadership and teamwork skills through middle school athletics.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2024 – Present</div>
+            <h3 class="timeline-title">First Year Coder</h3>
+            <p class="timeline-org neon-blue">Python Development</p>
+            <p class="timeline-desc">Started my coding journey this year. Focusing on Python fundamentals, logic, and building interactive scripts to solve problems and create games.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="neon-blue">04.</span> Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <h3 class="skill-cat-title" style="margin-top: 2rem;"><i class="fas fa-calendar-alt"></i> Semester 1 Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card" onclick="window.open('https://scratch.mit.edu/projects/1250081941/', '_blank')">
+          <div class="project-card-header"><div class="project-icon">🚀</div><div class="project-links"><i class="fas fa-external-link-alt"></i></div></div>
+          <h3 class="project-title">Space Shooter</h3>
+          <p class="project-desc">Scratch arcade game. Blast through space!</p>
+          <div class="project-tags"><span class="tag">Scratch</span></div>
+        </div>
+        <div class="project-card" onclick="window.location.href='projects/semester1/files/Smart access checker.py'">
+          <div class="project-card-header"><div class="project-icon">🔐</div><div class="project-links"><i class="fas fa-download"></i></div></div>
+          <h3 class="project-title">Access Checker</h3>
+          <p class="project-desc">Python logic script for security.</p>
+          <div class="project-tags"><span class="tag">Python</span></div>
+        </div>
+        <div class="project-card" onclick="window.location.href='projects/semester1/files/Leap year finder .txt'">
+          <div class="project-card-header"><div class="project-icon">📅</div><div class="project-links"><i class="fas fa-download"></i></div></div>
+          <h3 class="project-title">Leap Year Finder</h3>
+          <p class="project-desc">Year calculation logic program.</p>
+          <div class="project-tags"><span class="tag">Python</span></div>
+        </div>
+      </div>
+
+      <h3 class="skill-cat-title" style="margin-top: 3rem;"><i class="fas fa-calendar-check"></i> Semester 2 Projects</h3>
+      <div class="projects-grid">
+        <div class="project-card" onclick="window.location.href='projects/semester2/files/fireworks idle .py'">
+          <div class="project-card-header"><div class="project-icon">🎆</div><div class="project-links"><i class="fas fa-download"></i></div></div>
+          <h3 class="project-title">Fireworks Display</h3>
+          <p class="project-desc">Interactive Python graphics simulation.</p>
+          <div class="project-tags"><span class="tag">Python</span></div>
+        </div>
+        <div class="project-card" onclick="window.location.href='projects/semester2/files/loopsrun.py'">
+          <div class="project-card-header"><div class="project-icon">🔄</div><div class="project-links"><i class="fas fa-download"></i></div></div>
+          <h3 class="project-title">Loop Master</h3>
+          <p class="project-desc">Automation and repetitive task logic.</p>
+          <div class="project-tags"><span class="tag">Python</span></div>
+        </div>
+        <div class="project-card" onclick="window.location.href='projects/semester2/files/everything_test.py'">
+          <div class="project-card-header"><div class="project-icon">🧪</div><div class="project-links"><i class="fas fa-download"></i></div></div>
+          <h3 class="project-title">Everything Test</h3>
+          <p class="project-desc">Combined Python concepts in one script.</p>
+          <div class="project-tags"><span class="tag">Python</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="game">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="neon-orange-text">05.</span> 🏀 Shoot Your Shot</h2>
+        <div class="section-line orange"></div>
+      </div>
+      <div class="game-wrapper">
+        <div class="game-hud">
+          <div class="hud-item"><span class="hud-label">SCORE</span><span class="hud-value neon-orange-text" id="score">0</span></div>
+          <div class="hud-item"><span class="hud-label">HIGH SCORE</span><span class="hud-value neon-blue" id="highScore">0</span></div>
+          <div class="hud-item"><span class="hud-label">SHOTS LEFT</span><span class="hud-value neon-green-text" id="shotsLeft">10</span></div>
+        </div>
+        <canvas id="gameCanvas" width="700" height="450"></canvas>
+        <div class="game-controls">
+          <button class="btn btn-primary" id="startBtn">START GAME</button>
+          <button class="btn btn-secondary" id="resetBtn">RESET</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="neon-green-text">06.</span> Contact</h2>
+        <div class="section-line green"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">Whether you want to talk about **Python projects**, challenge me to a **1v1 on the court**, or just say what's up—I'm always down to connect. Drop a message below and I'll get back to you as soon as I'm off the court!</p>
+          <div class="contact-items">
+            <div class="contact-item"><i class="fas fa-envelope neon-blue"></i><span>zain_khan@s.thevillageschool.com</span></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your Name" required /></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="your@email.com" required /></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="What's up?" /></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Say something cool..." required></textarea></div>
+          <button type="submit" class="btn btn-primary full-width">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-logo"><span class="neon-blue">&lt;</span> ZAIN KHAN <span class="neon-blue">/&gt;</span></p>
+      <p class="footer-copy">© 2026 Zain Khan. Built with 🏀 &amp; 💻</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    /* =============================================
+       GAME.JS — Basketball Mini-Game
+       Canvas-based shoot-the-hoop game
+       ============================================= */
+    (function () {
+      const canvas = document.getElementById('gameCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      const STATE = { IDLE: 'idle', PLAYING: 'playing', SHOOTING: 'shooting', OVER: 'over' };
+      let gameState = STATE.IDLE;
+      let score = 0;
+      let highScore = parseInt(localStorage.getItem('bbHighScore') || '0');
+      let shotsLeft = 10;
+      let streak = 0;
+      let animFrame;
+
+      const scoreEl = document.getElementById('score');
+      const highScoreEl = document.getElementById('highScore');
+      const shotsEl = document.getElementById('shotsLeft');
+      const startBtn = document.getElementById('startBtn');
+      const resetBtn = document.getElementById('resetBtn');
+
+      highScoreEl.textContent = highScore;
+
+      const ball = { x: 100, y: 370, r: 18, vx: 0, vy: 0, gravity: 0.45, inFlight: false, trail: [], rotation: 0 };
+      const hoop = { x: 550, y: 140, rimW: 50, rimH: 6, postH: 120, speed: 1.2, dir: 1, scored: false, scoredTimer: 0 };
+      let particles = [];
+      let aimMode = false;
+      let mouseX = 0, mouseY = 0, power = 0, powerDir = 1, powerActive = false;
+      let flashMsg = '', flashTimer = 0;
+      const msgs = ['NICE SHOT!', 'SWISH!', 'BUCKETS!', 'MONEY!', 'DRIP!', 'GAME!', 'COLD-BLOODED!'];
+
+      function resetBall() {
+        ball.x = 100; ball.y = canvas.height - 80; ball.vx = 0; ball.vy = 0;
+        ball.inFlight = false; ball.trail = []; ball.rotation = 0;
+        power = 0; powerActive = false; aimMode = true;
+      }
+
+      function spawnParticles(x, y, color) {
+        for (let i = 0; i < 20; i++) {
+          const angle = Math.random() * Math.PI * 2;
+          const speed = Math.random() * 5 + 2;
+          particles.push({ x, y, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed - 3, life: 1, decay: Math.random() * 0.04 + 0.02, r: Math.random() * 5 + 2, color });
+        }
+      }
+
+      function updateParticles() {
+        particles = particles.filter(p => p.life > 0);
+        particles.forEach(p => { p.x += p.vx; p.y += p.vy; p.vy += 0.2; p.life -= p.decay; });
+      }
+
+      function drawParticles() {
+        particles.forEach(p => {
+          ctx.save(); ctx.globalAlpha = p.life; ctx.fillStyle = p.color; ctx.shadowColor = p.color; ctx.shadowBlur = 8;
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+        });
+      }
+
+      function drawBackground() {
+        ctx.fillStyle = '#060610'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = 'rgba(0, 240, 255, 0.04)'; ctx.lineWidth = 1;
+        for (let x = 0; x < canvas.width; x += 40) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke(); }
+        for (let y = 0; y < canvas.height; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
+        const floorY = canvas.height - 55;
+        ctx.strokeStyle = 'rgba(255, 107, 0, 0.3)'; ctx.lineWidth = 2; ctx.shadowColor = 'rgba(255, 107, 0, 0.5)'; ctx.shadowBlur = 8;
+        ctx.beginPath(); ctx.moveTo(0, floorY); ctx.lineTo(canvas.width, floorY); ctx.stroke(); ctx.shadowBlur = 0;
+      }
+
+      function drawHoop() {
+        const bx = hoop.x + hoop.rimW / 2 + 10; const by = hoop.y - 60;
+        ctx.fillStyle = 'rgba(0, 240, 255, 0.08)'; ctx.strokeStyle = 'rgba(0, 240, 255, 0.5)'; ctx.lineWidth = 2;
+        ctx.shadowColor = 'rgba(0, 240, 255, 0.4)'; ctx.shadowBlur = 10;
+        ctx.fillRect(bx - 5, by - 40, 10, 70); ctx.strokeRect(bx - 5, by - 40, 10, 70);
+        ctx.strokeStyle = 'rgba(0, 240, 255, 0.6)'; ctx.lineWidth = 1.5; ctx.strokeRect(bx - 4, by - 15, 8, 20); ctx.shadowBlur = 0;
+        ctx.fillStyle = 'rgba(0, 240, 255, 0.15)'; ctx.strokeStyle = 'rgba(0, 240, 255, 0.3)'; ctx.lineWidth = 3;
+        ctx.beginPath(); ctx.moveTo(bx, by + 30); ctx.lineTo(bx, canvas.height - 55); ctx.stroke();
+        const rimColor = hoop.scored ? '#39ff14' : '#ff6b00';
+        ctx.strokeStyle = rimColor; ctx.lineWidth = hoop.rimH; ctx.lineCap = 'round'; ctx.shadowColor = rimColor; ctx.shadowBlur = hoop.scored ? 25 : 12;
+        ctx.beginPath(); ctx.moveTo(hoop.x, hoop.y); ctx.lineTo(hoop.x + hoop.rimW, hoop.y); ctx.stroke(); ctx.shadowBlur = 0;
+        drawNet();
+      }
+
+      function drawNet() {
+        const nx = hoop.x; const ny = hoop.y + hoop.rimH / 2; const nw = hoop.rimW; const nh = 35; const segments = 6;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)'; ctx.lineWidth = 1;
+        for (let i = 0; i <= segments; i++) {
+          const x = nx + (nw / segments) * i; ctx.beginPath(); ctx.moveTo(x, ny); ctx.lineTo(nx + nw / 2 + (x - (nx + nw / 2)) * 0.4, ny + nh); ctx.stroke();
+        }
+        for (let j = 1; j <= 4; j++) {
+          const y = ny + (nh / 4) * j; const shrink = j * 0.12; ctx.beginPath(); ctx.moveTo(nx + nw * shrink, y); ctx.lineTo(nx + nw * (1 - shrink), y); ctx.stroke();
+        }
+      }
+
+      function drawBall() {
+        ball.trail.forEach((pos, i) => {
+          const alpha = (i / ball.trail.length) * 0.3; ctx.save(); ctx.globalAlpha = alpha; ctx.fillStyle = '#ff6b00'; ctx.shadowColor = '#ff6b00'; ctx.shadowBlur = 6;
+          ctx.beginPath(); ctx.arc(pos.x, pos.y, ball.r * (i / ball.trail.length), 0, Math.PI * 2); ctx.fill(); ctx.restore();
+        });
+        ctx.save(); ctx.translate(ball.x, ball.y); ctx.rotate(ball.rotation);
+        const grad = ctx.createRadialGradient(-5, -5, 2, 0, 0, ball.r); grad.addColorStop(0, '#ff8c30'); grad.addColorStop(0.6, '#ff6b00'); grad.addColorStop(1, '#cc4400');
+        ctx.fillStyle = grad; ctx.shadowColor = '#ff6b00'; ctx.shadowBlur = 15; ctx.beginPath(); ctx.arc(0, 0, ball.r, 0, Math.PI * 2); ctx.fill(); ctx.shadowBlur = 0;
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.6)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(0, 0, ball.r, 0, Math.PI * 2); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(-ball.r, 0); ctx.lineTo(ball.r, 0); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(0, -ball.r); ctx.lineTo(0, ball.r); ctx.stroke();
+        ctx.restore();
+      }
+
+      function drawAimGuide() {
+        if (!aimMode || ball.inFlight) return;
+        const dx = mouseX - ball.x; const dy = mouseY - ball.y; const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 10) return;
+        const vx = (dx / dist) * (power / 100) * 18; const vy = (dy / dist) * (power / 100) * 18;
+        ctx.save(); ctx.setLineDash([4, 8]); ctx.strokeStyle = 'rgba(0, 240, 255, 0.4)'; ctx.lineWidth = 1.5; ctx.shadowColor = 'rgba(0, 240, 255, 0.3)'; ctx.shadowBlur = 5;
+        ctx.beginPath(); ctx.moveTo(ball.x, ball.y);
+        let px = ball.x, py = ball.y, pvx = vx, pvy = vy;
+        for (let i = 0; i < 25; i++) { px += pvx; py += pvy; pvy += ball.gravity; if (py > canvas.height - 55) break; if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py); }
+        ctx.stroke(); ctx.restore();
+        ctx.save(); ctx.fillStyle = 'rgba(0, 240, 255, 0.7)'; ctx.shadowColor = 'rgba(0, 240, 255, 0.5)'; ctx.shadowBlur = 8; ctx.beginPath(); ctx.arc(mouseX, mouseY, 5, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+        drawPowerBar();
+      }
+
+      function drawPowerBar() {
+        const bx = 20, by = canvas.height - 40, bw = 150, bh = 12;
+        ctx.fillStyle = 'rgba(0,0,0,0.5)'; ctx.strokeStyle = 'rgba(0, 240, 255, 0.4)'; ctx.lineWidth = 1; ctx.fillRect(bx, by, bw, bh); ctx.strokeRect(bx, by, bw, bh);
+        const pct = power / 100; const color = pct < 0.4 ? '#39ff14' : pct < 0.7 ? '#ff6b00' : '#ff0044';
+        ctx.fillStyle = color; ctx.shadowColor = color; ctx.shadowBlur = 8; ctx.fillRect(bx, by, bw * pct, bh); ctx.shadowBlur = 0;
+        ctx.fillStyle = 'rgba(255,255,255,0.6)'; ctx.font = '10px "Share Tech Mono"'; ctx.fillText('POWER', bx, by - 4);
+      }
+
+      function drawFlashMsg() {
+        if (flashTimer <= 0) return;
+        const alpha = Math.min(1, flashTimer / 30); ctx.save(); ctx.globalAlpha = alpha; ctx.font = 'bold 28px Orbitron, sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#39ff14'; ctx.shadowColor = '#39ff14'; ctx.shadowBlur = 20; ctx.fillText(flashMsg, canvas.width / 2, canvas.height / 2 - 30); ctx.restore(); flashTimer--;
+      }
+
+      function drawOverlay() {
+        if (gameState === STATE.IDLE) {
+          ctx.save(); ctx.fillStyle = 'rgba(0, 240, 255, 0.85)'; ctx.font = 'bold 22px Orbitron, sans-serif'; ctx.textAlign = 'center'; ctx.shadowColor = 'rgba(0, 240, 255, 0.8)'; ctx.shadowBlur = 20; ctx.fillText('PRESS START TO PLAY', canvas.width / 2, canvas.height / 2); ctx.font = '13px "Share Tech Mono"'; ctx.fillStyle = 'rgba(255,255,255,0.5)'; ctx.shadowBlur = 0; ctx.fillText('Click or press SPACE to shoot', canvas.width / 2, canvas.height / 2 + 35); ctx.restore();
+        }
+        if (gameState === STATE.OVER) {
+          ctx.save(); ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(0, 0, canvas.width, canvas.height); ctx.textAlign = 'center'; ctx.font = 'bold 30px Orbitron, sans-serif'; ctx.fillStyle = '#ff6b00'; ctx.shadowColor = '#ff6b00'; ctx.shadowBlur = 25; ctx.fillText('GAME OVER', canvas.width / 2, canvas.height / 2 - 50); ctx.font = '18px Orbitron, sans-serif'; ctx.fillStyle = '#00f0ff'; ctx.shadowColor = '#00f0ff'; ctx.shadowBlur = 15; ctx.fillText(`FINAL SCORE: ${score}`, canvas.width / 2, canvas.height / 2); if (score >= highScore && score > 0) { ctx.font = '14px "Share Tech Mono"'; ctx.fillStyle = '#39ff14'; ctx.shadowColor = '#39ff14'; ctx.shadowBlur = 12; ctx.fillText('🏆 NEW HIGH SCORE!', canvas.width / 2, canvas.height / 2 + 35); } ctx.font = '12px "Share Tech Mono"'; ctx.fillStyle = 'rgba(255,255,255,0.4)'; ctx.shadowBlur = 0; ctx.fillText('Press RESET to play again', canvas.width / 2, canvas.height / 2 + 70); ctx.restore();
+        }
+      }
+
+      function shoot() {
+        if (!aimMode || ball.inFlight || gameState !== STATE.PLAYING) return;
+        const dx = mouseX - ball.x; const dy = mouseY - ball.y; const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 5) return;
+        const speed = (power / 100) * 18; ball.vx = (dx / dist) * speed; ball.vy = (dy / dist) * speed; ball.inFlight = true; aimMode = false; shotsLeft--; shotsEl.textContent = shotsLeft; power = 0; powerActive = false;
+      }
+
+      function checkScore() {
+        const rimLeft = hoop.x; const rimRight = hoop.x + hoop.rimW; const rimY = hoop.y;
+        const inX = ball.x > rimLeft + 5 && ball.x < rimRight - 5; const inY = Math.abs(ball.y - rimY) < ball.r + 4; const movingDown = ball.vy > 0;
+        if (inX && inY && movingDown && !hoop.scored) {
+          hoop.scored = true; hoop.scoredTimer = 40; streak++; const pts = streak >= 3 ? 3 : streak >= 2 ? 2 : 1; score += pts; scoreEl.textContent = score; if (score > highScore) { highScore = score; localStorage.setItem('bbHighScore', highScore); highScoreEl.textContent = highScore; } flashMsg = streak >= 3 ? '🔥 ON FIRE! +3' : streak >= 2 ? '💥 STREAK! +2' : msgs[Math.floor(Math.random() * msgs.length)]; flashTimer = 60; spawnParticles(ball.x, ball.y, '#39ff14'); spawnParticles(hoop.x + hoop.rimW / 2, hoop.y, '#ff6b00');
+        }
+      }
+
+      function update() {
+        if (gameState !== STATE.PLAYING) return;
+        hoop.x += hoop.speed * hoop.dir; if (hoop.x + hoop.rimW > canvas.width - 40 || hoop.x < 200) { hoop.dir *= -1; }
+        if (hoop.scoredTimer > 0) { hoop.scoredTimer--; } else { hoop.scored = false; }
+        if (powerActive) { power += 2 * powerDir; if (power >= 100) { power = 100; powerDir = -1; } if (power <= 0) { power = 0; powerDir = 1; } }
+        if (!ball.inFlight) return;
+        ball.trail.push({ x: ball.x, y: ball.y }); if (ball.trail.length > 12) ball.trail.shift();
+        ball.vy += ball.gravity; ball.x += ball.vx; ball.y += ball.vy; ball.rotation += ball.vx * 0.05;
+        const rimLeft = hoop.x; const rimRight = hoop.x + hoop.rimW; const rimY = hoop.y;
+        if (Math.abs(ball.x - rimLeft) < ball.r && Math.abs(ball.y - rimY) < ball.r + 4) { ball.vx = Math.abs(ball.vx) * 0.5; ball.vy *= 0.6; streak = 0; spawnParticles(rimLeft, rimY, '#ff6b00'); }
+        if (Math.abs(ball.x - rimRight) < ball.r && Math.abs(ball.y - rimY) < ball.r + 4) { ball.vx = -Math.abs(ball.vx) * 0.5; ball.vy *= 0.6; streak = 0; spawnParticles(rimRight, rimY, '#ff6b00'); }
+        checkScore();
+        const floorY = canvas.height - 55;
+        if (ball.y + ball.r >= floorY) {
+          ball.y = floorY - ball.r; ball.vy = -ball.vy * 0.4; ball.vx *= 0.8;
+          if (Math.abs(ball.vy) < 1) {
+            ball.vy = 0; ball.vx = 0; ball.inFlight = false; streak = 0;
+            if (shotsLeft <= 0) { setTimeout(() => { gameState = STATE.OVER; }, 600); } else { setTimeout(() => { resetBall(); }, 500); }
+          }
+        }
+        if (ball.x - ball.r < 0) { ball.x = ball.r; ball.vx = Math.abs(ball.vx) * 0.7; }
+        if (ball.x + ball.r > canvas.width) { ball.x = canvas.width - ball.r; ball.vx = -Math.abs(ball.vx) * 0.7; }
+        if (ball.y + ball.r < 0) { ball.inFlight = false; streak = 0; if (shotsLeft <= 0) { setTimeout(() => { gameState = STATE.OVER; }, 300); } else { setTimeout(() => { resetBall(); }, 300); } }
+        updateParticles();
+      }
+
+      function draw() { ctx.clearRect(0, 0, canvas.width, canvas.height); drawBackground(); drawHoop(); drawBall(); drawAimGuide(); drawParticles(); drawFlashMsg(); drawOverlay(); }
+      function loop() { update(); draw(); animFrame = requestAnimationFrame(loop); }
+
+      function startGame() {
+        score = 0; shotsLeft = 10; streak = 0; scoreEl.textContent = score; shotsEl.textContent = shotsLeft; particles = []; flashTimer = 0; gameState = STATE.PLAYING; hoop.x = 400; hoop.dir = 1; resetBall(); startBtn.textContent = 'PLAYING...'; startBtn.disabled = true;
+      }
+
+      function resetGame() {
+        gameState = STATE.IDLE; score = 0; shotsLeft = 10; streak = 0; scoreEl.textContent = score; shotsEl.textContent = shotsLeft; particles = []; flashTimer = 0; ball.inFlight = false; ball.x = 100; ball.y = canvas.height - 80; ball.vx = 0; ball.vy = 0; ball.trail = []; aimMode = false; startBtn.textContent = 'START GAME'; startBtn.disabled = false;
+      }
+
+      startBtn.addEventListener('click', startGame);
+      resetBtn.addEventListener('click', resetGame);
+      canvas.addEventListener('mousemove', (e) => { const rect = canvas.getBoundingClientRect(); const scaleX = canvas.width / rect.width; const scaleY = canvas.height / rect.height; mouseX = (e.clientX - rect.left) * scaleX; mouseY = (e.clientY - rect.top) * scaleY; });
+      canvas.addEventListener('mousedown', (e) => { if (gameState !== STATE.PLAYING || ball.inFlight) return; powerActive = true; powerDir = 1; power = 0; });
+      canvas.addEventListener('mouseup', (e) => { if (gameState !== STATE.PLAYING || ball.inFlight) return; powerActive = false; shoot(); });
+      canvas.addEventListener('touchstart', (e) => { e.preventDefault(); if (gameState !== STATE.PLAYING || ball.inFlight) return; const touch = e.touches[0]; const rect = canvas.getBoundingClientRect(); const scaleX = canvas.width / rect.width; const scaleY = canvas.height / rect.height; mouseX = (touch.clientX - rect.left) * scaleX; mouseY = (touch.clientY - rect.top) * scaleY; powerActive = true; powerDir = 1; power = 0; }, { passive: false });
+      canvas.addEventListener('touchmove', (e) => { e.preventDefault(); const touch = e.touches[0]; const rect = canvas.getBoundingClientRect(); const scaleX = canvas.width / rect.width; const scaleY = canvas.height / rect.height; mouseX = (touch.clientX - rect.left) * scaleX; mouseY = (touch.clientY - rect.top) * scaleY; }, { passive: false });
+      canvas.addEventListener('touchend', (e) => { e.preventDefault(); if (gameState !== STATE.PLAYING || ball.inFlight) return; powerActive = false; shoot(); }, { passive: false });
+      document.addEventListener('keydown', (e) => { if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return; if (e.code === 'Space') { e.preventDefault(); if (gameState === STATE.IDLE) { startGame(); return; } if (gameState === STATE.PLAYING && !ball.inFlight) { powerActive = true; powerDir = 1; power = 0; } } });
+      document.addEventListener('keyup', (e) => { if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return; if (e.code === 'Space' && gameState === STATE.PLAYING && !ball.inFlight) { powerActive = false; shoot(); } });
+      loop();
+    })();
+  </script>
+</body>
+</html>

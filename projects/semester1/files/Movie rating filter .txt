@@ -1,0 +1,8 @@
+age = int (input ("How old are you? "))
+
+if age < 13:
+    print ("You can watch G or Pg movies.")
+elif age < 17:
+    print("You can watch PG-13 movies.")
+else:
+    print("You can watch R-rated movies.")

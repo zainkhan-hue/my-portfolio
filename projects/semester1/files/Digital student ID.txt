@@ -1,0 +1,40 @@
+name = input("Enter your full name: ")
+
+grade = int(input("What grade are you in? (9-12): "))
+
+grad_year = int(input("What year will you graduate? "))
+
+likes_python_input = input("Do you like Python so far? (yes/no): ")
+
+favorite_subject = input("What is your favorite subject? ")
+
+student_id = input("Enter your student ID number: ")
+
+likes_python = likes_python_input.lower() == "yes"
+
+current_year = 2025
+
+years_left = grad_year - current_year
+
+print("\n" + "-" * 30)
+
+print("      DIGITAL STUDENT ID      ")
+
+print("-" * 30)
+
+print("Name:", name)
+
+print("Grade:", grade)
+
+print("Graduation Year:", grad_year)
+
+print("Years Until Graduation:", years_left)
+
+print("Likes Python:", likes_python)
+
+print("Favorite Subject:", favorite_subject)
+
+print("Student ID:", student_id)
+
+print("-" * 30)
+

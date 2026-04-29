@@ -1,0 +1,7 @@
+age = int(input("How old are you?"))
+if age >= 21:
+    print("You're an adult!")
+elif age >= 15:
+    print("Your a teenager!")
+else:
+    print("You're a kid!")

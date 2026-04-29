@@ -1,0 +1,9 @@
+credits = int(input("How many credits do you have? "))
+
+if credits < 15:
+    print("Freshman")
+elif credits < 35:
+    print("Sophomore")
+elif credits < 60:
+    print("Junior")
+else: print("Senior")

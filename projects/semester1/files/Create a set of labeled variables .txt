@@ -1,0 +1,15 @@
+favorite_food = "Ramen"
+
+best_friend = "bob"
+
+favorite_number = 7
+
+ 
+
+print("I love to eat", favorite_food)
+
+print("My best friend is", best_friend)
+
+print("My favorite number is", favorite_number)
+
+ 

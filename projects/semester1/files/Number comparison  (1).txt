@@ -1,0 +1,9 @@
+a = float(input("First number: "))
+b = float(input("Second number: "))
+
+if a < b:
+    print("First is larger.")
+elif b < a:
+    print("Second is larger.")
+else:
+    print("They are equal.")

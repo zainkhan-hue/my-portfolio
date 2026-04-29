@@ -1,0 +1,7 @@
+temp = int(input("Temperature today: "))
+
+if temp < 35:
+    print("Wear a jacket.")
+elif temp <= 75:
+    print("Nice day outside.")
+else: print("It's hot! Stay cool.")

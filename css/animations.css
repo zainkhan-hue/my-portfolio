@@ -1,0 +1,150 @@
+/* =============================================
+   ANIMATIONS & KEYFRAMES
+   ============================================= */
+
+/* Fade in up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade in left */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Fade in right */
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Neon flicker */
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 5px var(--neon-blue),
+      0 0 15px var(--neon-blue),
+      0 0 30px var(--neon-blue);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+/* Pulse glow */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 240, 255, 0.3); }
+  50%       { box-shadow: 0 0 25px rgba(0, 240, 255, 0.7), 0 0 50px rgba(0, 240, 255, 0.3); }
+}
+
+/* Orange pulse */
+@keyframes orangePulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 107, 0, 0.3); }
+  50%       { box-shadow: 0 0 25px rgba(255, 107, 0, 0.7), 0 0 50px rgba(255, 107, 0, 0.3); }
+}
+
+/* Scan line sweep */
+@keyframes scanSweep {
+  0%   { top: -100%; }
+  100% { top: 100%; }
+}
+
+/* Rotate */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Glitch effect */
+@keyframes glitch {
+  0%   { clip-path: inset(40% 0 61% 0); transform: translate(-2px, 0); }
+  20%  { clip-path: inset(92% 0 1% 0);  transform: translate(1px, 0); }
+  40%  { clip-path: inset(43% 0 1% 0);  transform: translate(-1px, 0); }
+  60%  { clip-path: inset(25% 0 58% 0); transform: translate(2px, 0); }
+  80%  { clip-path: inset(54% 0 7% 0);  transform: translate(-2px, 0); }
+  100% { clip-path: inset(58% 0 43% 0); transform: translate(1px, 0); }
+}
+
+/* =============================================
+   SCROLL REVEAL CLASSES
+   ============================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* =============================================
+   HERO ANIMATIONS (applied on load)
+   ============================================= */
+.hero-pre-title  { animation: fadeInUp 0.8s ease 0.2s both; }
+.hero-name       { animation: fadeInUp 0.8s ease 0.4s both; }
+.hero-roles      { animation: fadeInUp 0.8s ease 0.6s both; }
+.hero-tagline    { animation: fadeInUp 0.8s ease 0.8s both; }
+.hero-buttons    { animation: fadeInUp 0.8s ease 1.0s both; }
+.hero-ball-graphic { animation: fadeInRight 1s ease 0.5s both; }
+
+/* =============================================
+   NEON GLOW ANIMATIONS ON ELEMENTS
+   ============================================= */
+.navbar.scrolled .nav-logo .logo-bracket {
+  animation: neonFlicker 5s infinite;
+}
+
+.btn-primary {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.timeline-dot {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* =============================================
+   GAME CANVAS EFFECTS
+   ============================================= */
+#gameCanvas {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* =============================================
+   SECTION ENTRY ANIMATIONS
+   ============================================= */
+.skill-category  { animation: none; }
+.project-card    { animation: none; }
+.timeline-card   { animation: none; }

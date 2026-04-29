@@ -1,0 +1,11 @@
+amount = float (input("Purchase total : $ "))
+
+if amount < 85:
+    discount = 0.0
+elif amount <= 100:
+    discount 0.10
+else:
+    discount = 0.20
+    
+final_price = amount - (amount * discount)
+print("Final price: $", round (final_price, 2))

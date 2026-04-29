@@ -1,0 +1,11 @@
+name = input("What is your name?")
+age = int(input("How old are you?"))
+activity = input("What is your favorite activity?")
+height = float(input("How tall are you in feet?"))
+
+print("\n character profile")
+print("----------------------")
+print("Name:", name)
+print("Age:", age)
+print("Favorite activity:", activity)
+print("Height:", height, "feet")

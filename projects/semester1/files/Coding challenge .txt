@@ -1,0 +1,16 @@
+num1 = 12
+num2 = 3
+
+
+
+print("sum", num1 + num2)
+print("is num1 greater than num2?", num1 > num2)
+print("are they equal?", num1 == num2)
+
+ #logical operator
+print("is num1 > 5 and num2 < 5?", num1 > 5 and num2)
+
+first = "I"
+second = "love"
+third = "ramen"
+print(first + second + third)
